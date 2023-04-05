@@ -16,7 +16,7 @@ export default {
   name: 'HeaderComponent',
   data() {
     return {
-      title: 'My Website'
+      title: 'Library UPC'
     }
   }
 }
