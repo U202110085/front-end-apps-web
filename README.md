@@ -1,29 +1,16 @@
-# front-end-apps-web
+<h1>Repositorio de proyectos de laboratorio front-end del curso "Aplicaciones Web"</h1>
 
-## Project setup
+<h2>Tecnologías utilizadas</h2>
+<ul>
+	<li>IDE: WebStorm</li>
+	<li>Front-end framework: Vue.js</li>
+</ul>
 
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<h2>Colaboradores</h3>
+<ul>
+	<li><a href="https://github.com/oliverTuesta/">Oliver Tuesta</a></li>
+	<li><a href="https://github.com/u202110085/">Lucas Ruiz</a></li>
+	<li>Leonel Ortega</li>
+	<li>Arnol Caceres</li>
+	<li>David Quito</li>
+</ul>
