@@ -2,11 +2,20 @@
   <div>
     <Header /> <!-- Use the header component in your template -->
     <!-- Your app content goes here -->
-    <Tutorial/>
-    <Tutorial/>
-    <Tutorial/>
-    <Tutorial/>
-    <Category/>
+
+    <div class="container">
+      <div class="left-div">
+        <Category/>
+        <Category/>
+        <Category/>
+      </div>
+      <div class="right-div">
+        <Tutorial/>
+        <Tutorial/>
+        <Tutorial/>
+      </div>
+    </div>
+
     <footer-component></footer-component>
   </div>
 </template>
@@ -30,4 +39,23 @@ export default {
 
 <style scoped>
 /* Your app styles go here */
+
+.container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.left-div {
+    background-color: green; /* change as needed */
+}
+
+.right-div {
+    background-color: red; /* change as needed */
+}
+
+div {
+    padding: 10px;
+    margin: 10px;
+}
+
 </style>
