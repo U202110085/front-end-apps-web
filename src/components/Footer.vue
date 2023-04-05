@@ -22,7 +22,7 @@ export default {
 
 <style scoped>
 footer {
-    background-color: #333;
+    background-color: #fcb8e8;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -40,14 +40,17 @@ nav > div {
 
 .left-section a {
     margin-right: 20px;
+    color: #000;
 }
 
 .middle-section {
     margin: 0 20px;
+    color: #000;
 }
 
 .right-section {
     text-align: right;
+    color: #000;
 }
 
 footer p {

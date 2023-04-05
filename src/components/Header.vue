@@ -1,13 +1,8 @@
 <template>
   <header class="header">
+    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png"/>
     <h1 class="title">{{ title }}</h1>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item">Home</li>
-        <li class="nav-item">About</li>
-        <li class="nav-item">Contact</li>
-      </ul>
-    </nav>
+    <img class="icon" src="https://i.pinimg.com/474x/cb/b6/1d/cbb61dc9f560a4e96c2c64f41a90ce3f.jpg"/>
   </header>
 </template>
 
@@ -43,6 +38,10 @@ export default {
 
 .nav-item {
   margin-right: 10px;
+}
+
+.icon {
+  width: 40px;
 }
 </style>
 

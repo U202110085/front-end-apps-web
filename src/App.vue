@@ -5,14 +5,16 @@
 
     <div class="container">
       <div class="left-div">
-        <Category/>
-        <Category/>
-        <Category/>
+        <Category title="Category 1" description="ke hace"/>
+        <Category title="Category 2" description="ke hace"/>
+        <Category title="Category 3" description="ke hace"/>
+        <Category title="Category 4" description="ke hace"/>
       </div>
       <div class="right-div">
-        <Tutorial/>
-        <Tutorial/>
-        <Tutorial/>
+        <Tutorial title="Tutorial 1" imageUrl="https://elcomercio.pe/resizer/wtXe3Cbf-Mzeb2pfn2XQiskyL7k=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/LVRUHV5RPZBWLIZD7Y2VLRNI3A.jpg" description="Como preparar almuerzo"/>
+        <Tutorial title="Tutorial 2" imageUrl="https://s.yimg.com/ny/api/res/1.2/WfAIcTxGIhQZIMOSjLPohw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTg1Mw--/https://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/f4130c376e8c1633b900e6006fea8d89" description="Como preparar almuerzo"/>
+        <Tutorial title="Tutorial 3" imageUrl="https://cdn.memegenerator.es/imagenes/memes/full/0/27/277525.jpg" description="Como preparar almuerzo"/>
+        <Tutorial title="Tutorial 4" imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU1x8GAt38EPz0EXctHyXoGp6iT9gV96nZWQ&usqp=CAU" description="Como preparar almuerzo"/>
       </div>
     </div>
 
@@ -46,16 +48,18 @@ export default {
 }
 
 .left-div {
-    background-color: green; /* change as needed */
+    background-color: #ffcfcf; /* change as needed */
 }
 
 .right-div {
-    background-color: red; /* change as needed */
+    background-color: #ebebeb; /* change as needed */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-div {
+.left-div, .right-div {
     padding: 10px;
     margin: 10px;
 }
-
 </style>

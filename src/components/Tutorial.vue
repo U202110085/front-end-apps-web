@@ -1,10 +1,9 @@
 <template>
   <div class="card">
+    <h3 class="card-title">{{ title }}</h3>
     <img class="card-img" :src="imageUrl" alt="Tutorial Image">
     <div class="card-body">
-      <h3 class="card-title">{{ title }}</h3>
       <p class="card-text">{{ description }}</p>
-      <a href="#" class="btn btn-primary">Read More</a>
     </div>
   </div>
 </template>
@@ -22,13 +21,16 @@ export default {
 
 <style scoped>
 .card {
-  width: 18rem;
+  width: 50%;
   margin-bottom: 1rem;
+  background-color: #fff;
 }
 
 .card-img {
   height: 10rem;
   object-fit: cover;
+  display: block;
+  margin: auto auto;
 }
 
 .card-body {
@@ -36,6 +38,7 @@ export default {
 }
 
 .card-title {
+  text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -43,6 +46,7 @@ export default {
 
 .card-text {
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .btn {
