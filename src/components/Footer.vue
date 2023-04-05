@@ -1,9 +1,9 @@
 <template>
   <footer>
     <nav>
-    <a href="mailto:venta@library.com">venta@library.com</a></a> |
-    981622558</a> |
-    Los Manzanos 398</a>
+    <a href="mailto:venta@library.com">venta@library.com</a>
+    <p>981622558</p> 
+    <p>Los Manzanos 398</p>
     </nav>
   </footer>
 </template>
