@@ -1,4 +1,4 @@
-<h1>Repositorio de proyectos de laboratorio front-end del curso "Aplicaciones Web"</h1>
+﻿<h1>Repositorio de proyectos de laboratorio front-end del curso "Aplicaciones Web"</h1>
 
 <h2>Tecnologías utilizadas</h2>
 <ul>
@@ -12,5 +12,5 @@
 	<li><a href="https://github.com/u202110085/">Lucas Ruiz</a></li>
 	<li><a href="https://github.com/arnolcb">Arnol Cáceres</a></li>
     <li>Leonel Ortega</li>
-	<li>David Quito</li>
+	<li><a href="https://github.com/Paronimus386">David Quito</a></li>
 </ul>
