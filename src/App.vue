@@ -13,9 +13,9 @@ import AddTutorial from '@/components/AddTutorial.vue';
 
 export default {
   components: {
-    FooterComponent,
-    Header,
-    AddTutorial
+      FooterComponent,
+      Header,
+      AddTutorial
   },
 }
 </script>
