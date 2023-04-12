@@ -27,7 +27,7 @@
     </div>
     <div>
       <div class="checkbox-label">
-        <pv-checkbox v-model="checked" :binary="true" value="Digital Version" id="checkbox"></pv-checkbox>
+        <pv-checkbox v-model="checked" :binary="true" value="Digital Version" inputId="checkbox"></pv-checkbox>
         <label for="checkbox">Digital Version</label>
       </div>
     </div>
