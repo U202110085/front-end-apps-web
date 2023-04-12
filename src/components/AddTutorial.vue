@@ -1,10 +1,13 @@
 <template>
   <pv-panel header="Add Tutorial">
-    <div>
+    <div class="validate">
       <h2 class='inline'>Code: </h2>
       <pv-input-mask class='space' id="basic" v-model="value" mask="99-999999" placeholder="99-999999"></pv-input-mask>
-      <pv-input-text></pv-input-text>
+        <div class = "button-container">
+            <pv-button class='center' label="Validate" severity="validate" />
+        </div>
     </div>
+
     <div>
       <h2 class='inline'>Name:</h2>
       <pv-input-text></pv-input-text>
@@ -105,6 +108,11 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.validate {
+    display: flex;
+    align-items: center;
 }
 
 .button-container {
