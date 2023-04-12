@@ -93,7 +93,6 @@
     <div class="button-container">
       <pv-button class="center" label="Save" severity="success" />
       <pv-button class="center" label="Cancel" severity="danger" />
-      <pv-button class="center" label="Ok" severity="ok" />
     </div>
   </pv-panel>
 </template>
