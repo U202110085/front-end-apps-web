@@ -56,8 +56,8 @@
       </div>
     </div>
     <div class='button-container'>
-      <pv-button class='center' label="Success" severity="success" />
-      <pv-button class='center' label="Danger" severity="danger" />
+      <pv-button class='center' label="Save" severity="success" />
+      <pv-button class='center' label="Cancel" severity="danger" />
     </div>
   </pv-panel>
 </template>
