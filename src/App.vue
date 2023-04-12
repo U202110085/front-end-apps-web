@@ -1,9 +1,7 @@
 <template>
-  <div>
     <Header />
      <AddTutorial />
   <FooterComponent />
-  </div>
 </template>
 
 <script>
@@ -25,24 +23,4 @@ export default {
 <style scoped>
 
 
-.container {
-    display: grid;
-    grid-template-columns: 25% 75%;
-}
-
-.left-div {
-    background-color: #ffcfcf;
-}
-
-.right-div {
-    background-color: #ebebeb;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.left-div, .right-div {
-    padding: 10px;
-    margin: 10px;
-}
 </style>

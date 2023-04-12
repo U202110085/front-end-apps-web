@@ -6,6 +6,7 @@ import PrimeVue from 'primevue/config';
 import "primevue/resources/themes/lara-light-indigo/theme.css";
 import "primevue/resources/primevue.min.css";
 import "primeicons/primeicons.css";
+
 import Panel from 'primevue/panel';
 import Button from 'primevue/button';
 import InputText from 'primevue/inputtext';
@@ -20,7 +21,6 @@ import RadioButton from 'primevue/radiobutton';
 //Importing PrimeVue Components
 const app = createApp(App);
 
-app.use(PrimeVue);
 app.component('pv-button', Button);
 app.component('pv-input-text', InputText);
 app.component('pv-panel', Panel);
@@ -31,5 +31,6 @@ app.component('pv-input-number', InputNumber);
 app.component('pv-textarea', Textarea);
 app.component('pv-checkbox', Checkbox);
 app.component('pv-radio-button', RadioButton);
+app.use(PrimeVue);
 
-createApp(App).mount('#app')
+app.mount('#app')
