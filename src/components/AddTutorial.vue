@@ -26,7 +26,35 @@
       <pv-textarea v-model="value2" autoResize rows="3" cols="50"></pv-textarea>
     </div>
     <div>
-      <pv-checkbox class='center' v-model="checked" :binary="true" value="Digital Version"></pv-checkbox>
+      <div class="checkbox-label">
+        <pv-checkbox v-model="checked" :binary="true" value="Digital Version" id="checkbox"></pv-checkbox>
+        <label for="checkbox">Digital Version</label>
+      </div>
+    </div>
+    <div class='radio-container'>
+      <h2 class='inline'>Status:</h2>
+      <div class="">
+        <label class="radio-inline">
+          <pv-radio-button v-model="ingredient" inputId="ingredient1" name="pizza" value="Cheese" />
+          Active
+        </label>
+      </div>
+      <div class="">
+        <label class="radio-inline">
+          <pv-radio-button v-model="ingredient" inputId="ingredient2" name="pizza" value="Mushroom" />
+          Suspended
+        </label>
+      </div>
+      <div class="">
+        <label class="radio-inline">
+          <pv-radio-button v-model="ingredient" inputId="ingredient3" name="pizza" value="Pepper" />
+          Inactive
+        </label>
+      </div>
+    </div>
+    <div class='button-container'>
+      <pv-button class='center' label="Success" severity="success" />
+      <pv-button class='center' label="Danger" severity="danger" />
     </div>
   </pv-panel>
 </template>
@@ -45,7 +73,7 @@ const date = ref();
 const value1 = ref();
 const value2 = ref();
 const checked = ref(false);
-
+const ingredient = ref('');
 </script>
 
 <script>
@@ -70,13 +98,35 @@ export default {
 }
 
 .space {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.radio-inline {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
 }
 
 </style>
