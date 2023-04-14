@@ -33,10 +33,6 @@
       <pv-calendar v-model="date"></pv-calendar>
     </div>
     <div>
-      <label class="inline" for="lastdateUpdated">{{ $t("lastdateUpdated") }}:</label>
-      <pv-calendar v-model="date"></pv-calendar>
-    </div>
-    <div>
       <label class="inline" for="quantity">{{ $t("quantity") }}:</label>
       <pv-input-number
         v-model="value1"
