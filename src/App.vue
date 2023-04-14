@@ -11,6 +11,7 @@ import Header from "./components/Header.vue";
 import FooterComponent from "@/components/Footer.vue";
 import AddTutorial from "@/components/AddTutorial.vue";
 
+// OT1707
 export default {
   components: {
     FooterComponent,
