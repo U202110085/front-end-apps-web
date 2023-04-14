@@ -1,7 +1,7 @@
 <template>
   <pv-panel class="half-screen" :header="$t('addTutorial')">
     <div class="validate">
-      <h2 class="inline">{{ $t("code") }}:</h2>
+      <label class="inline" for="code">{{ $t("code") }}:</label>
       <pv-input-mask
         class="space"
         id="basic"
@@ -15,12 +15,12 @@
     </div>
 
     <div>
-      <label class="inline">{{ $t("name") }}:</label>
+      <label class="inline" for="name">{{ $t("name") }}:</label>
         <pv-input-text id="name"></pv-input-text>
     </div>
-      
+
     <div>
-      <h2 class="inline">{{ $t("category") }}:</h2>
+      <label class="inline" for="category">{{ $t("category") }}:</label>
       <pv-dropdown
         v-model="selectedCategories"
         :options="categories"
@@ -29,11 +29,11 @@
       ></pv-dropdown>
     </div>
     <div>
-      <h2 class="inline">{{ $t("dateAdded") }}:</h2>
+      <label class="inline" for="dateAdded">{{ $t("dateAdded") }}:</label>
       <pv-calendar v-model="date"></pv-calendar>
     </div>
     <div>
-      <h2 class="inline">{{ $t("quantity") }}:</h2>
+      <label class="inline" for="quantity">{{ $t("quantity") }}:</label>
       <pv-input-number
         v-model="value1"
         inputId="withoutgrouping"
@@ -41,7 +41,7 @@
       ></pv-input-number>
     </div>
     <div>
-      <h2 class="inline">{{ $t("description") }}:</h2>
+      <label class="inline" for="description">{{ $t("description") }}:</label>
       <pv-textarea v-model="value2" autoResize rows="3" cols="50"></pv-textarea>
     </div>
     <div>
@@ -56,7 +56,7 @@
       </div>
     </div>
     <div class="radio-container">
-      <h2 class="inline">{{ $t("status") }}:</h2>
+      <label class="inline" for="status">{{ $t("status") }}:</label>
       <div class="">
         <label class="radio-inline">
           <pv-radio-button
