@@ -15,9 +15,10 @@
     </div>
 
     <div>
-      <h2 class="inline">{{ $t("name") }}:</h2>
-      <pv-input-text></pv-input-text>
+      <label class="inline">{{ $t("name") }}:</label>
+        <pv-input-text id="name"></pv-input-text>
     </div>
+      
     <div>
       <h2 class="inline">{{ $t("category") }}:</h2>
       <pv-dropdown
