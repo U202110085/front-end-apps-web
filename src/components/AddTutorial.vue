@@ -165,6 +165,14 @@ export default {
   align-items: center;
 }
 
+.radio-container label:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.radio-container input[type="radio"]:checked + label {
+    font-weight: bold;
+}
 .checkbox-label {
   display: flex;
   align-items: center;

@@ -11,6 +11,6 @@
 	<li><a href="https://github.com/oliverTuesta/">Oliver Tuesta</a></li>
 	<li><a href="https://github.com/u202110085/">Lucas Ruiz</a></li>
 	<li><a href="https://github.com/arnolcb">Arnol Cáceres</a></li>
-    <li>Leonel Ortega</li>
+    <li><a href="https://github.com/leonel1301">Leonel Ortega</a></li>
 	<li><a href="https://github.com/Paronimus386">David Quito</a></li>
 </ul>
