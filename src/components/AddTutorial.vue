@@ -12,7 +12,7 @@
       <div class="button-container">
         <pv-button class="center" :label="$t('validate')" severity="validate" />
       </div>
-    </div>
+    </div>x	
 
     <div>
       <label class="inline" for="name">{{ $t("name") }}:</label>
@@ -30,6 +30,10 @@
     </div>
     <div>
       <label class="inline" for="dateAdded">{{ $t("dateAdded") }}:</label>
+      <pv-calendar v-model="date"></pv-calendar>
+    </div>
+    <div>
+      <label class="inline" for="lastdateUpdated">{{ $t("lastdateUpdated") }}:</label>
       <pv-calendar v-model="date"></pv-calendar>
     </div>
     <div>
