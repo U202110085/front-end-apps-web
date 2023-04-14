@@ -12,7 +12,7 @@
       <div class="button-container">
         <pv-button class="center" :label="$t('validate')" severity="validate" />
       </div>
-    </div>	
+    </div>
 
     <div>
       <label class="inline" for="name">{{ $t("name") }}:</label>
