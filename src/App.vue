@@ -5,10 +5,9 @@
 
         <div class="container">
             <div class="left-div">
-                <Category title="Category 1" description="ke hace"/>
-                <Category title="Category 2" description="ke hace"/>
-                <Category title="Category 3" description="ke hace"/>
-                <Category title="Category 4" description="ke hace"/>
+                <div v-for ="category in categories">
+                    <Category :title=category.title :description=category.description v-bind="t1"></Category>
+                </div>
             </div>
             <div class="right-div">
                 <Tutorial title="Tutorial 1" imageUrl="https://elcomercio.pe/resizer/wtXe3Cbf-Mzeb2pfn2XQiskyL7k=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/LVRUHV5RPZBWLIZD7Y2VLRNI3A.jpg" description="Como preparar almuerzo"/>
@@ -36,8 +35,12 @@ export default {
     },
     data(){
         return{
+            categories:[],
 
         }
+    },
+    beforeMount(){
+        this.categories=[{title:"titulo1",description:"descripcion1"},{title:"titulo2",description:"descripcion2"}]
     }
 
     // Your app logic goes here
