@@ -1,7 +1,7 @@
 <template>
-  <pv-panel class="half-screen" header="Add Tutorial">
+  <pv-panel class="half-screen" :header="$t('addTutorial')">
     <div class="validate">
-      <h2 class="inline">Code:</h2>
+      <label class="inline" for="code">{{ $t("code") }}:</label>
       <pv-input-mask
         class="space"
         id="basic"
@@ -10,29 +10,30 @@
         placeholder="99-999999"
       ></pv-input-mask>
       <div class="button-container">
-        <pv-button class="center" label="Validate" severity="validate" />
+        <pv-button class="center" :label="$t('validate')" severity="validate" />
       </div>
     </div>
 
     <div>
-      <h2 class="inline">Name:</h2>
-      <pv-input-text></pv-input-text>
+      <label class="inline" for="name">{{ $t("name") }}:</label>
+        <pv-input-text id="name"></pv-input-text>
     </div>
+
     <div>
-      <h2 class="inline">Category:</h2>
+      <label class="inline" for="category">{{ $t("category") }}:</label>
       <pv-dropdown
         v-model="selectedCategories"
         :options="categories"
         optionLabel="name"
-        placeholder="Category"
+        :placeholder="$t('category')"
       ></pv-dropdown>
     </div>
     <div>
-      <h2 class="inline">Date added:</h2>
+      <label class="inline" for="dateAdded">{{ $t("dateAdded") }}:</label>
       <pv-calendar v-model="date"></pv-calendar>
     </div>
     <div>
-      <h2 class="inline">Quantity:</h2>
+      <label class="inline" for="quantity">{{ $t("quantity") }}:</label>
       <pv-input-number
         v-model="value1"
         inputId="withoutgrouping"
@@ -40,7 +41,7 @@
       ></pv-input-number>
     </div>
     <div>
-      <h2 class="inline">Description:</h2>
+      <label class="inline" for="description">{{ $t("description") }}:</label>
       <pv-textarea v-model="value2" autoResize rows="3" cols="50"></pv-textarea>
     </div>
     <div>
@@ -51,11 +52,11 @@
           value="Digital Version"
           inputId="checkbox"
         ></pv-checkbox>
-        <label for="checkbox">Digital Version</label>
+        <label for="checkbox">{{ $t("digitalVersion") }}</label>
       </div>
     </div>
     <div class="radio-container">
-      <h2 class="inline">Status:</h2>
+      <label class="inline" for="status">{{ $t("status") }}:</label>
       <div class="">
         <label class="radio-inline">
           <pv-radio-button
@@ -64,7 +65,7 @@
             name="pizza"
             value="Cheese"
           />
-          Active
+          {{ $t("active") }}
         </label>
       </div>
       <div class="">
@@ -75,7 +76,7 @@
             name="pizza"
             value="Mushroom"
           />
-          Suspended
+          {{ $t("suspended") }}
         </label>
       </div>
       <div class="">
@@ -86,13 +87,13 @@
             name="pizza"
             value="Pepper"
           />
-          Inactive
+          {{ $t("inactive") }}
         </label>
       </div>
     </div>
     <div class="button-container">
-      <pv-button class="center" label="Save" severity="success" />
-      <pv-button class="center" label="Cancel" severity="danger" />
+      <pv-button class="center" :label="$t('save')" severity="success" />
+      <pv-button class="center" :label="$t('cancel')" severity="danger" />
     </div>
   </pv-panel>
 </template>
@@ -166,12 +167,12 @@ export default {
 }
 
 .radio-container label:hover {
-    cursor: pointer;
-    font-weight: bold;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .radio-container input[type="radio"]:checked + label {
-    font-weight: bold;
+  font-weight: bold;
 }
 .checkbox-label {
   display: flex;
