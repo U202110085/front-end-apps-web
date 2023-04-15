@@ -2,11 +2,10 @@
     <div>
         <Header /> <!-- Use the header component in your template -->
         <!-- Your app content goes here -->
-
         <div class="container">
             <div class="left-div">
-                <div v-for ="category in categories">
-                    <Category :title=category.title :description=category.description v-bind="t1"></Category>
+                <div v-for="category in categories" :key="category.id">
+                    <Category :title="category.title" :description="category.description" v-bind="t1"></Category>
                 </div>
             </div>
             <div class="right-div">
