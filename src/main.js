@@ -18,8 +18,8 @@ import Textarea from "primevue/textarea";
 import Checkbox from "primevue/checkbox";
 import RadioButton from "primevue/radiobutton";
 
-//Importing i18n
 import i18n from "./locales/i18n";
+import router from "./router";
 
 //Importing PrimeVue Components
 const app = createApp(App);
@@ -36,5 +36,6 @@ app.component("pv-checkbox", Checkbox);
 app.component("pv-radio-button", RadioButton);
 app.use(PrimeVue);
 app.use(i18n);
+app.use(router);
 
 app.mount("#app");
