@@ -1,16 +1,21 @@
 <template>
     <div>
-        <h1>{{ title }}</h1>
-        <p>{{ content }}</p>
+        <LibraryComponent />
     </div>
 </template>
 
 <script>
+    import LibraryComponent from "@/components/Library.vue";
+
     export default {
-        name: "MyComponent",
-        props: {
-            title: String,
-            content: String,
+        name: "App",
+        data() {
+            return {
+                message: "Hello, world!",
+            };
+        },
+        components: {
+            LibraryComponent,
         },
     };
 </script>

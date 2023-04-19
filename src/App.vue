@@ -1,15 +1,14 @@
 <template>
     <div>
         <Header />
-        <LibraryComponent />
+        <router-view></router-view>
         <footer-component></footer-component>
     </div>
 </template>
 
 <script>
-    import Header from "./components/Header.vue";
+    import Header from "@/components/Header.vue";
     import FooterComponent from "@/components/Footer.vue";
-    import LibraryComponent from "@/components/Library.vue";
 
     export default {
         name: "App",
@@ -21,7 +20,6 @@
         components: {
             FooterComponent,
             Header,
-            LibraryComponent,
         },
     };
 </script>

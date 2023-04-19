@@ -1,12 +1,8 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import AddTutorial from "@/components/AddTutorial.vue";
-import LibraryComponent from "@/components/Library.vue";
+import Home from "@/components/Home.vue";
 
-const routes = [
-    { path: "/", component: LibraryComponent },
-    { path: "/addTutorial", component: AddTutorial },
-    {},
-];
+const routes = [{ path: "/", component: Home }, { path: "/add", component: AddTutorial }, {}];
 
 const router = createRouter({
     // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
