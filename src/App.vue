@@ -7,8 +7,9 @@
 </template>
 
 <script>
-    import Header from "@/components/Header.vue";
+    import Header from "./components/Header.vue"; // Import the header component
     import FooterComponent from "@/components/Footer.vue";
+    import "@fortawesome/fontawesome-free/css/all.css";
 
     export default {
         name: "App",
@@ -20,6 +21,8 @@
         components: {
             FooterComponent,
             Header,
+
+            // Register the header component in your Vue instance
         },
     };
 </script>

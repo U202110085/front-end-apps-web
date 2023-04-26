@@ -1,10 +1,11 @@
 import { createI18n } from 'vue-i18n';
 
 const i18n = createI18n({
-    locale: 'fr',
+    locale: 'ja',
 
     messages: {
         en: {
+            welcome: 'Welcome',
             username: 'User',
             clickme: 'Click me!',
             code: 'Code',
@@ -23,9 +24,17 @@ const i18n = createI18n({
             cancel: 'Cancel',
             addTutorial: 'Add Tutorial',
             library: 'Library',
+            user: 'User',
+            post: 'Post',
+            edit: 'Edit',
+            backToPosts: 'Back to Posts',
+            title: 'Title',
+            body: 'Body',
+            delete: 'Delete',
         },
 
         es: {
+            welcome: 'Bienvenido',
             username: 'Usuario',
             clickme: 'Haz clic!',
             code: 'Codigo',
@@ -44,9 +53,17 @@ const i18n = createI18n({
             cancel: 'Cancelar',
             addTutorial: 'Agregar Tutorial',
             library: 'Libreria',
+            user: 'Usuario',
+            post: 'Publicacion',
+            edit: 'Editar',
+            backToPosts: 'Volver a Publicaciones',
+            title: 'Titulo',
+            body: 'Cuerpo',
+            delete: 'Borrar',
         },
 
         fr: {
+            welcome: 'Bienvenue',
             username: 'Utilisateur',
             clickme: 'Cliquez sur moi!',
             code: 'Code',
@@ -65,9 +82,17 @@ const i18n = createI18n({
             cancel: 'Annuler',
             addTutorial: 'Ajouter Tutoriel',
             library: 'Bibliotheque',
+            user: 'Utilisateur',
+            post: 'Poste',
+            edit: 'Editer',
+            backToPosts: 'Retour aux Postes',
+            title: 'Titre',
+            body: 'Corps',
+            delete: 'Effacer',
         },
 
         ja: {
+            welcome: 'ようこそ',
             username: 'ユーザー名',
             clickme: 'クリックしてください！',
             code: 'コード',
@@ -86,6 +111,13 @@ const i18n = createI18n({
             cancel: 'キャンセル',
             addTutorial: 'チュートリアルを追加',
             library: '図書館',
+            user: 'ユーザー',
+            post: '投稿',
+            edit: '編集',
+            backToPosts: '投稿に戻る',
+            title: '題名',
+            body: '本文',
+            delete: '削除',
         },
     },
 

@@ -18,11 +18,14 @@ import Textarea from "primevue/textarea";
 import Checkbox from "primevue/checkbox";
 import RadioButton from "primevue/radiobutton";
 
+//Importing i18n
 import i18n from "./locales/i18n";
-import router from "./router";
 
 //Importing PrimeVue Components
 const app = createApp(App);
+
+//Importing router
+import router from "./router";
 
 app.component("pv-button", Button);
 app.component("pv-input-text", InputText);
