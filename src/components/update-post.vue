@@ -1,18 +1,18 @@
 <template>
     <div class="update-user m-2">
         <div class="form-group">
-            <label class="form-label" for="username">Title:</label>
+            <label class="form-label" for="username">{{ $t('title') }}:</label>
             <pv-input-text class="form-control" v-model="title" id="username"></pv-input-text>
         </div>
         <div class="form-group">
-            <label class="form-label" for="email2">Body:</label>
+            <label class="form-label" for="email2">{{ $t('body') }}:</label>
             <pv-textarea class="form-control" v-model="body" id="email2"></pv-textarea>
         </div>
         <div class="form-group">
-            <pv-button class="btn-save" label="Save" @click="update()"></pv-button>
+            <pv-button class="btn-save" :label="$t('save')" @click="update()"></pv-button>
         </div>
         <router-link class="btn-back" to="/post">
-            <i class="fas fa-arrow-left"></i> Back to Posts
+            <i class="fas fa-arrow-left"></i> {{ $t('backToPosts') }}
         </router-link>
     </div>
 </template>

@@ -11,7 +11,7 @@
                         :to="{ name: 'post', params: { id: post.id } }"
                         class="post-edit-link"
                     >
-                        Edit
+                        {{ $t('edit') }}
                     </router-link>
                 </div>
                 <div class="post-body">{{ post.body }}</div>
@@ -76,6 +76,7 @@
         font-weight: bold;
     }
     .post-edit-link {
+        white-space: nowrap;
         background-color: #007bff;
         color: #fff;
         padding: 0.5rem 1rem;
