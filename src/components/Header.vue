@@ -35,7 +35,7 @@
     }
 
     .title {
-        font-size: 24px;
+        font-size: 26px;
         font-weight: bold;
         color: #000;
         text-decoration: none;
