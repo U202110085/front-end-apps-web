@@ -3,35 +3,20 @@
         <div class="user">
             <h1>{{ $t('post') }}</h1>
         </div>
-        <div class="post-list">
-            <div v-for="post in posts" :key="post.id" class="post-item">
-                <div class="post-header">
-                    <h2 class="post-title">{{ post.title }}</h2>
-                    <router-link
-                        :to="{ name: 'post', params: { id: post.id } }"
-                        class="post-edit-link"
-                    >
-                        {{ $t('edit') }}
-                    </router-link>
-                    <button class="post-delete-link" @click="deletePost(post.id)">Delete</button>
-                    <br />
-                </div>
-                <div class="post-body">{{ post.body }}</div>
-            </div>
-        </div>
-
         <div class="p-grid">
             <div v-for="post in posts" :key="post.id" class="p-col-12 p-md-6 p-lg-4">
                 <div class="p-card">
                     <h3>{{ post.title }}</h3>
                     <p>{{ post.body }}</p>
                     <router-link
-                      :to="{ name: 'post', params: { id: post.id } }"
-                      class="post-edit-link"
+                        :to="{ name: 'post', params: { id: post.id } }"
+                        class="post-edit-link"
                     >
-                        Edit
+                        {{ $t('edit') }}
                     </router-link>
-                    <button class="post-delete-link" @click="deletePost(post.id)">Delete</button>
+                    <button class="post-delete-link" @click="deletePost(post.id)">
+                        {{ $t('delete') }}
+                    </button>
                     <br />
                 </div>
             </div>

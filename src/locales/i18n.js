@@ -30,6 +30,7 @@ const i18n = createI18n({
             backToPosts: 'Back to Posts',
             title: 'Title',
             body: 'Body',
+            delete: 'Delete',
         },
 
         es: {
@@ -58,6 +59,7 @@ const i18n = createI18n({
             backToPosts: 'Volver a Publicaciones',
             title: 'Titulo',
             body: 'Cuerpo',
+            delete: 'Borrar',
         },
 
         fr: {
@@ -86,6 +88,7 @@ const i18n = createI18n({
             backToPosts: 'Retour aux Postes',
             title: 'Titre',
             body: 'Corps',
+            delete: 'Effacer',
         },
 
         ja: {
@@ -114,6 +117,7 @@ const i18n = createI18n({
             backToPosts: '投稿に戻る',
             title: '題名',
             body: '本文',
+            delete: '削除',
         },
     },
 
