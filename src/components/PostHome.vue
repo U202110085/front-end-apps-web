@@ -1,7 +1,23 @@
 <template>
     <div class="post-container">
         <div class="user">
-            <h1>Posts</h1>
+            <h1>{{ $t('post') }}</h1>
+        </div>
+        <div class="post-list">
+            <div v-for="post in posts" :key="post.id" class="post-item">
+                <div class="post-header">
+                    <h2 class="post-title">{{ post.title }}</h2>
+                    <router-link
+                        :to="{ name: 'post', params: { id: post.id } }"
+                        class="post-edit-link"
+                    >
+                        {{ $t('edit') }}
+                    </router-link>
+                    <button class="post-delete-link" @click="deletePost(post.id)">Delete</button>
+                    <br />
+                </div>
+                <div class="post-body">{{ post.body }}</div>
+            </div>
         </div>
 
         <div class="p-grid">
@@ -10,8 +26,8 @@
                     <h3>{{ post.title }}</h3>
                     <p>{{ post.body }}</p>
                     <router-link
-                        :to="{ name: 'post', params: { id: post.id } }"
-                        class="post-edit-link"
+                      :to="{ name: 'post', params: { id: post.id } }"
+                      class="post-edit-link"
                     >
                         Edit
                     </router-link>
