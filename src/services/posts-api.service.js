@@ -19,7 +19,7 @@ export class PostsApiService {
         return http.patch('posts/' + id, body);
     }
 
-    /*delete(id) {
+    delete(id) {
         return http.delete('posts/' + id);
-    }*/
+    }
 }
