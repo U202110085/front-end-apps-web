@@ -1,7 +1,7 @@
 <template>
     <div class="post-container">
         <div class="user">
-            <h1>Posts</h1>
+            <h1>{{ $t('post') }}</h1>
         </div>
         <div class="post-list">
             <div v-for="post in posts" :key="post.id" class="post-item">
