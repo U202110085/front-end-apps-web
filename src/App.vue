@@ -9,6 +9,7 @@
 <script>
     import Header from './components/Header.vue'; // Import the header component
     import FooterComponent from '@/components/Footer.vue';
+    import '@fortawesome/fontawesome-free/css/all.css';
 
     // OT1707
     export default {
