@@ -1,11 +1,7 @@
 <template>
     <div>
         <Header />
-        <!-- Use the header component in your template -->
-        <!-- Your app content goes here -->
-        <!-- Create router -->
         <router-view></router-view>
-
         <footer-component></footer-component>
     </div>
 </template>
