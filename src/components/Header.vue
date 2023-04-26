@@ -41,6 +41,10 @@
         text-decoration: none;
     }
 
+    .title:hover {
+        color: #ff0000;
+    }
+
     .icon {
         width: 40px;
     }
