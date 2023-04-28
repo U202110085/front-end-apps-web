@@ -2,6 +2,7 @@
     <div class="user">
         <h1>{{ $t("user") }}</h1>
     </div>
+
     <div v-for="user in users" :key="user.id">
         user {{ user.id }} {{ user.username }}
         <router-link :to="{ name: 'user', params: { id: user.id } }"> edit</router-link>
