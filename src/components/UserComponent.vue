@@ -1,6 +1,6 @@
 <template>
     <div class="user">
-        <h1>User</h1>
+        <h1>{{ $t("user") }}</h1>
     </div>
     <div v-for="user in users" :key="user.id">
         user {{ user.id }} {{ user.username }}
@@ -10,9 +10,9 @@
 </template>
 
 <script>
-    import { UsersApiService } from '@/services/users-api.service';
+    import { UsersApiService } from "@/services/users-api.service";
     export default {
-        name: 'UserComponent',
+        name: "UserComponent",
         data() {
             return {
                 users: [],
@@ -21,7 +21,7 @@
         },
         beforeMount() {
             this.id = this.$route.params.id;
-            this.nameUser = '';
+            this.nameUser = "";
             this.getAll();
         },
         methods: {
