@@ -12,9 +12,12 @@
         <label for="password" class="margin">Password</label>
         <pv-input-text v-model="password" class="margin" type="password"></pv-input-text><br/>
         <pv-button label="Login" @click="login" class="margin"></pv-button>
+        <pv-button label="Logout" @click="logout" class="margin"></pv-button>
     </div>
     <div>
-        <!-- aqui leo tiene que agregar un comentario indicando una contrasenia y clave -->
+        <p>Username: user@upc.com<pv-button @click="useUser" class="small">Use</pv-button></p>
+        <p>Password: 1234<pv-button @click="usePassword" class="small">Use</pv-button></p>
+        <p><i>El resto de usuario (en el DB) tienen contraseña "upc1234"</i></p>
     </div>
 </template>
 
@@ -41,15 +44,34 @@ import { PostsApiService } from '@/services/posts-api.service';
                 this.userApiService.login(body).then(response=>{
                    window.localStorage.setItem('jwt', response.data.accessToken);
                    window.location.reload();
+                   alert('You have been logged in');
                 })
                 this.username='';
                 this.password='';
+            },
+            logout(){
+                window.localStorage.removeItem('jwt');
+                window.location.reload();
+                alert('You have been logged out');
+            },
+            useUser(){
+                this.username='user@upc.com';
+            },
+            usePassword(){
+                this.password='1234';
             }
         }
     };
 </script>
 
 <style scoped>
+    .small{
+        width: 50px;
+        height: 20px;
+        font-size: 10px;
+        justify-content: center;
+        margin-left: 10px;
+    }
     .home-container {
         max-width: 800px;
         margin: 0 auto;
