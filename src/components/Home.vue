@@ -6,11 +6,46 @@
             <router-link to="/post" class="home-link">{{ $t("post") }}</router-link>
         </div>
     </div>
+    <div class="home-container">
+        <label for="username" class="margin">Username</label>
+        <pv-input-text v-model="username" class="margin"></pv-input-text><br/>
+        <label for="password" class="margin">Password</label>
+        <pv-input-text v-model="password" class="margin" type="password"></pv-input-text><br/>
+        <pv-button label="Login" @click="login" class="margin"></pv-button>
+    </div>
+    <div>
+        <!-- aqui leo tiene que agregar un comentario indicando una contrasenia y clave -->
+    </div>
 </template>
 
 <script>
+import { UsersApiService } from '@/services/users-api.service';
+import { PostsApiService } from '@/services/posts-api.service';
+
     export default {
         name: "HomeComponent",
+        data(){
+            return{
+                username:'',
+                password:'',
+                userApiService: new UsersApiService(),
+                postApiService: new PostsApiService()
+            }
+        },
+        methods:{
+            login(){
+                const body ={
+                    email:this.username,
+                    password:this.password
+                }
+                this.userApiService.login(body).then(response=>{
+                   window.localStorage.setItem('jwt', response.data.accessToken);
+                   window.location.reload();
+                })
+                this.username='';
+                this.password='';
+            }
+        }
     };
 </script>
 
@@ -44,5 +79,8 @@
     .home-link:hover {
         background-color: #0069d9;
         border-color: #0062cc;
+    }
+    .margin{
+        margin: 10px;
     }
 </style>

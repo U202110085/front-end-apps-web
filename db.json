@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "email": "lucas@gmail.com",
+      "password": "$2a$10$4E4jKxaUnI1biPLcCSO67.SSTwW/UBBZHv1u1FHMV.v9quX3fHIzy",
+      "id": 1
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "$2a$10$V6XORvA.RBIy4lDRmBXC4eWjJD5p7Y0nxvnqPGaoOnryBNFLoxihS",
+      "id": 2
+    },
+    {
+      "email": "user22@gmail.com",
+      "password": "$2a$10$/hVpzjz1alAuWMIcqJX2kOhkOPBIneYij/iy1b/NntY4XFnUlUPG.",
+      "id": 3
+    },
+    {
+      "email": "user233@gmail.com",
+      "password": "$2a$10$jeaQZ/WOC3gj31MrwZgAn./hoqmV.J0R0SiyM4kPe1vKX5Im0GrMq",
+      "id": 4
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$QgCo73RSdetD0MXEf2RDfOlEBfEy1MsAFYSQtbYO8dyrux8rWHox2",
+      "id": 5
+    },
+    {
+      "email": "paulo@gmail.com",
+      "password": "$2a$10$8t5lqbjlyAvaBk0lwVVB6uzrCBxmmh2QWdx.4KdieoKnb/Erp7cWG",
+      "firstname": "Paulo",
+      "lastname": "Ruiz",
+      "username": "TheMan",
+      "id": 6
+    },
+    {
+      "email": "user@upc.com",
+      "password": "$2a$10$r4jKDIbUtBO1rhRonyQAiOToZ067.Z6TL.fm1qTEfwhZHngMM0P7.",
+      "id": 7
+    }
+  ],
+  "posts": [
+    {
+      "title": "Post 1",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "id": 1
+    },
+    {
+      "title": "Post 23",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "id": 2
+    },
+    {
+      "title": "Post 14",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "id": 3
+    },
+    {
+      "title": "Post 69",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "id": 4
+    },
+    {
+      "title": "Post 420",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "id": 5
+    },
+    {
+      "title": "Post 800815",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "id": 6
+    }
+  ]
+}

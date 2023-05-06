@@ -35,7 +35,7 @@
                 postService: new PostsApiService(),
             };
         },
-        beforeMount() {
+        mounted() {
             this.getAll();
         },
         methods: {
