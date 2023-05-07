@@ -1,4 +1,4 @@
-<template>
+﻿<template>
     <div class="home-container">
         <h1 class="home-title">{{ $t("welcome") }}</h1>
         <div class="home-links">
@@ -68,7 +68,7 @@ import { PostsApiService } from '@/services/posts-api.service';
     .small{
         width: 50px;
         height: 20px;
-        font-size: 10px;
+        font-size: 12px;
         justify-content: center;
         margin-left: 10px;
     }
